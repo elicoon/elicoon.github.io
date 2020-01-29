@@ -1,37 +1,54 @@
+/* Typography */
 body {
+  /* Everything is Lato */
+  font-family: 'Lato', sans-serif;
+}
+/* Except we're using more specific rules to override the headlines */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+/* And the "logo" */
+.navbar-brand {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 30px;
+}
+.navbar-brand img {
+  width: 30px;
+  height: 30px;
+}
+.navbar-light .navbar-brand {
+  color: blueviolet;
 }
 
-h1, .display-4 {
-  color: purple;
-  font-weight: 700;
+/* Navbar background color */
+.navbar {
+  background-color: white;
 }
 
-img {
-  height: 320px;
+/* Jumbotron background and font styles */
+.jumbotron {
+  /* Background */
+  background-attachment: fixed;
+  background-image: url(dog2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Fonts */
+  /* The text-shadow helps the white text stand out better on a darker background */
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
-h1.section-title {
-  border: none;
-  margin-top: 20px;
+/* The dogs */
+.dogs {
+  background-color: #181818;
+}
+.dogs h1 {
+  font-family: 'Poppins', sans-serif;
+  color: white;
 }
 
-.section-title {
-  border-top: 1px solid #aaa;
-  border-bottom: 1px solid #aaa;
-  text-align: center;
-  padding: 15px auto;
-  margin: 0 0 20px;
-  text-transform: uppercase;
-}
-
-.progress {
-  height: 15px;
-}
-
-.progress-bar {
-  width: 20%;
-}
-
-.bg-kellogg {
-  background-color: purple;
+/* The footer */
+.footer img {
+  width: 150px;
 }
